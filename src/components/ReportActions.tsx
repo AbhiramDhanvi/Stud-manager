@@ -126,7 +126,7 @@ export default function ReportActions({ students }: ReportActionsProps) {
             <div className="space-y-1.5 text-xs">
               <div className="flex items-center space-x-2">
                 <User className="w-4 h-4" />
-                <span><strong>Lead Auditor:</strong> Abhiram C R</span>
+                <span><strong>Lead Auditor:</strong> Dr. Elena Rostova</span>
               </div>
               <div>
                 <span><strong>Role:</strong> Class Administrator</span>

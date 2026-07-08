@@ -105,7 +105,7 @@ export default function App() {
   }, [students, searchQuery, sortConfig]);
 
   return (
-    <div className="min-h-screen bg-neo-green text-black pb-16 px-4 sm:px-6 lg:px-8 selection:bg-black selection:text-neo-green">
+    <div className="min-h-screen bg-[#f3f4f6] text-black pb-16 px-4 sm:px-6 lg:px-8 selection:bg-black selection:text-white">
       
       {/* 1. Global Navigation / Header Row (No-Print) */}
       <header className="max-w-7xl mx-auto pt-8 pb-4 flex flex-col md:flex-row justify-between items-start md:items-end gap-4 border-b-[8px] border-black mb-8 no-print">
@@ -120,7 +120,7 @@ export default function App() {
         
         <div className="text-left md:text-right uppercase font-black text-black font-mono w-full md:w-auto">
           <div className="text-xl sm:text-2xl">Academic Year 2026</div>
-          <div className="text-sm sm:text-lg mt-1">Lead Auditor: Abhiram C R</div>
+          <div className="text-sm sm:text-lg mt-1">Lead Auditor: Dr. Elena Rostova</div>
           <div className="mt-3 flex items-center justify-start md:justify-end gap-3">
             <button
               onClick={handleResetDatabase}
