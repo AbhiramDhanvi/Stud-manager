@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-neo-green: #00FF00;
+  --color-neo-green-dark: #00CC00;
+  --color-neo-green-light: #E6FFE6;
+}
+
+/* Neo-Brutalist styling defaults with Geometric Balance background */
+body {
+  background-color: #00FF00;
+  color: #000000;
+  font-family: var(--font-sans);
+}
+
+/* Custom shadow utilities */
+.neo-shadow {
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+.neo-shadow-lg {
+  box-shadow: 8px 8px 0px 0px #000000;
+}
+
+.neo-shadow-sm {
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+.neo-shadow-green {
+  box-shadow: 4px 4px 0px 0px var(--color-neo-green-dark);
+}
+
+/* High contrast print styles */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt !important;
+  }
+  
+  /* Hide non-printable elements */
+  .no-print,
+  button,
+  form,
+  header .no-print,
+  .print-hidden {
+    display: none !important;
+  }
+
+  /* Show and style the print-only report container */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Ensure correct container layout for printing */
+  .print-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .print-table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  .print-table th,
+  .print-table td {
+    border: 1px solid #000000 !important;
+    padding: 8px !important;
+    font-size: 10pt !important;
+  }
+
+  /* Keep high contrast text readable */
+  .print-text-black {
+    color: #000000 !important;
+  }
+}
+
+/* Custom scrollbars for a modern tech feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-left: 2px solid #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #00ff66;
+  border: 2px solid #000000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc52;
+}
+

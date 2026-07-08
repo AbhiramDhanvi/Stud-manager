@@ -1,0 +1,6 @@
+{
+  "name": "Student Management System",
+  "description": "A high-contrast Neo-Brutalist Student Management System featuring dynamic analytics, inline editing, smart search, column sorting, and CSV/Print exports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
